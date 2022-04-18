@@ -12,7 +12,7 @@ public class LocalDataStore implements DataStore {
   private double squaredSum;
   private int count;
 
-  LocalDataStore() {
+  public LocalDataStore() {
     this.average = 0.0;
     this.stdDev = 0.0;
     this.sum = 0.0;

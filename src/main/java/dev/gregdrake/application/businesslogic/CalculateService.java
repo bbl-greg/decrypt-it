@@ -17,22 +17,29 @@ public class CalculateService implements CalculateUseCase {
 
   @Override
   public RunningValues calculate(double input) {
-    double squaredInput = Math.pow(input, 2);
-
+    //Get current values from dataStore
     int latestCount = this.dataStore.getCount() + 1;
     double average = this.dataStore.getAverage();
     double sum = this.dataStore.getSum();
     double squaredSum = this.dataStore.getSquaredSum();
 
+    //Calculated values for use finding new stdDev
     double newSum = sum + input;
+    double squaredInput = Math.pow(input, 2);
     double newSquaredSum = squaredSum + squaredInput;
+
+    //Main calculations to find average and std deviation
     double newAvg = calculateAverage(latestCount, average, input);
     double newStdDev = calculateStdDeviation(newSquaredSum, newSum, latestCount);
+
+    //Update the singleton dataStore with new values to use during next request
     this.dataStore.updateAvg(newAvg);
     this.dataStore.updateStdDev(newStdDev);
     this.dataStore.updateCount(latestCount);
     this.dataStore.updateSum(newSum);
     this.dataStore.updateSquaredSum(newSquaredSum);
+
+    //Return calculated running values
     return new RunningValuesEntity(newAvg, newStdDev);
   }
 
