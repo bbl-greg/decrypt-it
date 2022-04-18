@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d5697e3-4f32-4c96-ab77-be452056d4cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dev/gregdrake/application/businesslogic/CalculateServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CalculateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CalculateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/adapters/LocalDataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/adapters/LocalDataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/gregdrake/application/businesslogic/CalculateServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/gregdrake/application/businesslogic/CalculateServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +37,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="decrypt-it" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="decrypt-it" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -92,7 +85,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.CalculateServiceTest">
+  <component name="RunManager" selected="Gradle.decrypt-it [testClasses]">
     <configuration name="CalculateServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,27 +155,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="decrypt-it [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="compileJava" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="decrypt-it [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,13 +176,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="decrypt-it [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.decrypt-it [testClasses]" />
         <item itemvalue="Gradle.CalculateServiceTest" />
         <item itemvalue="Gradle.CalculateServiceTest.testMultipleCalculateInvocations" />
         <item itemvalue="Gradle.CalculateServiceTest.testCalculate" />
         <item itemvalue="Gradle.decrypt-it [shadowJar]" />
-        <item itemvalue="Gradle.decrypt-it [compileJava]" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +221,7 @@
       <workItem from="1650212943444" duration="24476000" />
       <workItem from="1650307142899" duration="3035000" />
       <workItem from="1650311063730" duration="942000" />
-      <workItem from="1650312142333" duration="4712000" />
+      <workItem from="1650312142333" duration="5581000" />
     </task>
     <servers />
   </component>

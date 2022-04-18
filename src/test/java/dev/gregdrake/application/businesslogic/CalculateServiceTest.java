@@ -43,7 +43,7 @@ public class CalculateServiceTest {
         BigDecimal expectedThirdAverage = new BigDecimal("5.666667").setScale(2, RoundingMode.CEILING);
         BigDecimal expectedThirdStdDev = new BigDecimal("1.247219").setScale(2, RoundingMode.CEILING);
 
-
+        //Invocations of Calculate
         sut.calculate(4);
         RunningValues actualSecondInv = sut.calculate(7);
         RunningValues actualThirdInv = sut.calculate(6);

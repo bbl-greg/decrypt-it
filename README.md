@@ -8,12 +8,12 @@ that keeps a running average and calculated standard deviation for all numbers s
 The technology behind it:
 
 * Java 17
-* Postgres
 * Dropwizard
+* Running average and std deviation values come from shared singleton resource inject via Guice
 
 ## Installing / Getting started
 
-#### Using Gradle (with H2 or local Postgres database)
+#### Using Gradle
 
 First compile an application:
 
@@ -25,6 +25,16 @@ Then to run it:
 
 ```console
 $ java -jar build/libs/decrypt-it-1.0-SNAPSHOT-all.jar serve decrypt-it.yml
+```
+
+## Running Unit Tests
+
+#### Using Gradle
+
+Run unit tests:
+
+```console
+$ gradle clean test
 ```
 
 # REST API
