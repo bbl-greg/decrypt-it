@@ -1,5 +1,5 @@
 /* (C)2022 */
-package dev.gregdrake.domain.runningvalue.model.RunningValues;
+package dev.gregdrake.application.resources.controllers.runningvalue.model.RunningValues;
 
 public class RunningValuesEntity implements RunningValues {
     private final double average;

@@ -4,6 +4,8 @@ package dev.gregdrake.application.resources.controllers.runningvalue.infastructu
 import dev.gregdrake.application.resources.controllers.runningvalue.model.RunningValues.RunningValues;
 import java.util.HashMap;
 
-public interface EncryptUseCase {
+public interface CryptoUseCase {
     HashMap<String, String> encrypt(RunningValues input);
+
+    double decrypt(String input);
 }

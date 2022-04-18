@@ -1,15 +1,14 @@
 /* (C)2022 */
-package dev.gregdrake.domain.runningvalue.application;
+package dev.gregdrake.application.resources.controllers.runningvalue.application;
 
 import com.google.inject.Inject;
-import com.google.inject.Singleton;
-import dev.gregdrake.domain.runningvalue.infastructure.CalculateUseCase;
-import dev.gregdrake.domain.runningvalue.infastructure.DataStore;
-import dev.gregdrake.domain.runningvalue.model.RunningValues.RunningValues;
-import dev.gregdrake.domain.runningvalue.model.RunningValues.RunningValuesEntity;
+import dev.gregdrake.application.resources.controllers.runningvalue.infastructure.CalculateUseCase;
+import dev.gregdrake.application.resources.controllers.runningvalue.infastructure.DataStore;
+import dev.gregdrake.application.resources.controllers.runningvalue.model.RunningValues.RunningValues;
+import dev.gregdrake.application.resources.controllers.runningvalue.model.RunningValues.RunningValuesEntity;
 
 public class CalculateService implements CalculateUseCase {
-    final private DataStore dataStore;
+    private final DataStore dataStore;
 
     @Inject
     CalculateService(DataStore dataStore) {
@@ -26,7 +25,7 @@ public class CalculateService implements CalculateUseCase {
         double squaredSum = this.dataStore.getSquaredSum();
 
         double newSum = sum + input;
-        double newSquaredSum = squaredSum+squaredInput;
+        double newSquaredSum = squaredSum + squaredInput;
         double newAvg = calculateAverage(latestCount, average, input);
         double newStdDev = calculateStdDeviation(newSquaredSum, newSum, latestCount);
         this.dataStore.updateAvg(newAvg);
@@ -41,12 +40,12 @@ public class CalculateService implements CalculateUseCase {
         return average + (input - average) / count;
     }
 
-        public double calculateStdDeviation(double squaredInputSum, double newSum, int count) {
-            double stdDev = 0;
-            double squaredNewSum = Math.pow(newSum, 2);
-            if (count <= 1) {
-                return stdDev;
-            }
-           return Math.sqrt((squaredInputSum - (squaredNewSum/count)) / (count));
+    public double calculateStdDeviation(double squaredInputSum, double newSum, int count) {
+        double stdDev = 0;
+        double squaredNewSum = Math.pow(newSum, 2);
+        if (count <= 1) {
+            return stdDev;
+        }
+        return Math.sqrt((squaredInputSum - (squaredNewSum / count)) / (count));
     }
 }

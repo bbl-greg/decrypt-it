@@ -1,5 +1,5 @@
 /* (C)2022 */
-package dev.gregdrake.domain.runningvalue.infastructure;
+package dev.gregdrake.application.resources.controllers.runningvalue.infastructure;
 
 public interface DataStore {
     int getCount();
