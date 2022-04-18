@@ -3,7 +3,7 @@
 > written by Greg Drake
 
 This application is designed to provide a basic REST endpoint and connected service
-that keeps a running average and calculated standard deviation for all numbers submitted to it.
+that keeps a running average and calculated standard deviation for all numbers submitted to it.  It also will encrypt and decrypt values when requested.
 
 The technology behind it:
 
