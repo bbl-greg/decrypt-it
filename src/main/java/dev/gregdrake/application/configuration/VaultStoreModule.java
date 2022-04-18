@@ -3,13 +3,13 @@ package dev.gregdrake.application.configuration;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Scopes;
-import dev.gregdrake.application.resources.controllers.runningvalue.infastructure.VaultStore;
-import dev.gregdrake.infastructure.LocalVaultStore;
+import dev.gregdrake.infastructure.adapters.LocalVaultStore;
+import dev.gregdrake.infastructure.interfaces.VaultStore;
 
 public class VaultStoreModule extends AbstractModule {
-    @Override
-    protected void configure() {
-        super.configure();
-        bind(VaultStore.class).to(LocalVaultStore.class).in(Scopes.SINGLETON);
-    }
+  @Override
+  protected void configure() {
+    super.configure();
+    bind(VaultStore.class).to(LocalVaultStore.class).in(Scopes.SINGLETON);
+  }
 }

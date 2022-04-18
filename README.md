@@ -13,14 +13,6 @@ The technology behind it:
 
 ## Installing / Getting started
 
-#### Using `docker-compose`
-
-In the terminal run the following command:
-
-```console
-$ docker-compose up
-```
-
 #### Using Gradle (with H2 or local Postgres database)
 
 First compile an application:
@@ -35,17 +27,58 @@ Then to run it:
 $ java -jar build/libs/decrypt-it-1.0-SNAPSHOT-all.jar serve decrypt-it.yml
 ```
 
-For a second option, check in the configuration file - `src/main/resources/application.yml` for profile *local-postgres*
-if connection details are correct and if so, run the command:
+# REST API
 
-```console
-$ mvn spring-boot:run -P local-postgres
-```
+Using Decrypt-It REST APIs:
 
-#### Inside IntelliJ (with H2 or Postgres database)
+## Push and Recalculate
 
-First configure how you run the `LibraryHexagonalApplication.java` by adding `--spring.profiles.active=h2` (for H2
-database) or `--spring.profiles.active=postgres` (for Postgres database) as a **Program argument**.
+### Request
 
-Then just run the `LibraryHexagonalApplication.java` class so it will use H2 database (you don't need to have postgres
-database up and running).
+`POST /runningvalue/push-and-recalculate`
+
+    curl --request PUT \
+    --url http://localhost:8080/runningvalue/push-and-recalculate \
+    --header 'Content-Type: application/json' \
+    --data '{"value" : "some_number"}'
+
+### Response
+
+    { "average": "some_value_calculated", "stdDeviation": "some_value_calculated" }
+
+## Push, Recalculate, And Encrypt
+
+### Request
+
+`POST /runningvalue/push-and-recalculate-and-encrypt`
+
+    curl --request PUT \
+    --url http://localhost:8080/runningvalue/push-and-recalculate-and-encrypt \
+    --header 'Content-Type: application/json' \
+    --data '{"value" : "some_number"}'
+
+### Response
+
+    { "average": "some_value_encrypted", "stdDeviation": "some_value_encrypted" }
+
+## Decrypt
+
+### Request
+
+`POST /runningvalue/runningvalue/decrypt`
+
+    curl --request PUT \
+    --url http://localhost:8080/runningvalue/decrypt \
+    --header 'Content-Type: application/json' \
+    --data '{"value" : "/9+E6BQM1Nlx8NWSb1E7dQ=="}'
+
+### Response
+
+    { "decryptedValue": "1.5" }
+
+  <br>
+
+#### Decrypt Note
+
+<sub>Only values encrypted during the current server session can be decrypted. The symmetric key is unique to each
+server cycle. Trying to decrypt a key generated during a previous server session will result in a 500 error.

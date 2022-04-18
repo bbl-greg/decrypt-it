@@ -13,30 +13,29 @@ import io.dropwizard.setup.Environment;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
 
 public class DecryptItApplication extends Application<DecryptItApplicationConfiguration> {
-    public static void main(String[] args) throws Exception {
-        new DecryptItApplication().run(args);
-    }
+  public static void main(String[] args) throws Exception {
+    new DecryptItApplication().run(args);
+  }
 
-    @Override
-    public void initialize(Bootstrap<DecryptItApplicationConfiguration> bootstrap) {
-        // Enable variable substitution with environment variables
-        bootstrap.setConfigurationSourceProvider(
-                new SubstitutingSourceProvider(
-                        bootstrap.getConfigurationSourceProvider(),
-                        new EnvironmentVariableSubstitutor(false)));
+  @Override
+  public void initialize(Bootstrap<DecryptItApplicationConfiguration> bootstrap) {
+    // Enable variable substitution with environment variables
+    bootstrap.setConfigurationSourceProvider(
+        new SubstitutingSourceProvider(
+            bootstrap.getConfigurationSourceProvider(), new EnvironmentVariableSubstitutor(false)));
 
-        bootstrap.addBundle(
-                GuiceBundle.builder()
-                        .enableAutoConfig(getClass().getPackage().getName())
-                        .modules(
-                                new CalculateModule(),
-                                new DataStoreModule(),
-                                new VaultStoreModule(),
-                                new CryptoModule())
-                        .build());
-    }
+    bootstrap.addBundle(
+        GuiceBundle.builder()
+            .enableAutoConfig(getClass().getPackage().getName())
+            .modules(
+                new CalculateModule(),
+                new DataStoreModule(),
+                new VaultStoreModule(),
+                new CryptoModule())
+            .build());
+  }
 
-    @Override
-    public void run(DecryptItApplicationConfiguration configuration, Environment environment)
-            throws Exception {}
+  @Override
+  public void run(DecryptItApplicationConfiguration configuration, Environment environment)
+      throws Exception {}
 }

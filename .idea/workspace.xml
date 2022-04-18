@@ -5,32 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d5697e3-4f32-4c96-ab77-be452056d4cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/decrypt-it.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/CalculateModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/CryptoModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/DataStoreModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/VaultStoreModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/RunningValueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/application/CalculateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/application/CryptoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/application/dto/ValueDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/CalculateUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/CryptoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/DataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/VaultStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/model/RunningValues/RunningValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/model/RunningValues/RunningValuesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/LocalDataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/LocalVaultStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/data/interfaces/DecryptedOutputValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/data/interfaces/RecalculatedOutputValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/DecryptItApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/DecryptItApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/DecryptItApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/DecryptItApplicationConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/CalculateModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/CalculateModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/CryptoModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/CryptoModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/DataStoreModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/DataStoreModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/VaultStoreModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/configuration/VaultStoreModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/RunningValueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/adapter/RunningValueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/application/CalculateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CalculateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/application/CryptoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CryptoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/application/dto/ValueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/data/interfaces/InputValueDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/CalculateUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/interfaces/CalculateUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/CryptoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/interfaces/CryptoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/interfaces/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/infastructure/VaultStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/interfaces/VaultStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/model/RunningValues/RunningValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/domain/runningvalues/interfaces/RunningValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/resources/controllers/runningvalue/model/RunningValues/RunningValuesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/domain/runningvalues/entities/RunningValuesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/LocalDataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/adapters/LocalDataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/LocalVaultStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/infastructure/adapters/LocalVaultStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +104,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;google-java-format.settings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RunManager" selected="Gradle.decrypt-it [shadowJar]">
@@ -240,7 +234,10 @@
       <workItem from="1650137505506" duration="1506000" />
       <workItem from="1650139024584" duration="24977000" />
       <workItem from="1650209423887" duration="3502000" />
-      <workItem from="1650212943444" duration="24148000" />
+      <workItem from="1650212943444" duration="24476000" />
+      <workItem from="1650307142899" duration="3035000" />
+      <workItem from="1650311063730" duration="942000" />
+      <workItem from="1650312142333" duration="445000" />
     </task>
     <servers />
   </component>
