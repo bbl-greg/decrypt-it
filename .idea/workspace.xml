@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d5697e3-4f32-4c96-ab77-be452056d4cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Running Total Service PLAN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/gregdrake/application/businesslogic/CryptoServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CalculateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CalculateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CryptoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gregdrake/application/businesslogic/CryptoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/gregdrake/application/businesslogic/CalculateServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/gregdrake/application/businesslogic/CalculateServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +40,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="decrypt-it" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="decrypt-it" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -85,8 +94,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.decrypt-it [testClasses]">
-    <configuration name="CalculateServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.CryptoServiceTest.testRunThroughEncryptAndDecrypt">
+    <configuration name="CalculateServiceTest.testCalculateAverage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -99,7 +113,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dev.gregdrake.application.businesslogic.CalculateServiceTest&quot;" />
+            <option value="&quot;dev.gregdrake.application.businesslogic.CalculateServiceTest.testCalculateAverage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -109,7 +123,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CalculateServiceTest.testCalculate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculateServiceTest.testCalculateStdDeviationCountEquals1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -122,7 +136,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dev.gregdrake.application.businesslogic.CalculateServiceTest.testCalculate&quot;" />
+            <option value="&quot;dev.gregdrake.application.businesslogic.CalculateServiceTest.testCalculateStdDeviationCountEquals1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -132,7 +146,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CalculateServiceTest.testMultipleCalculateInvocations" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculateServiceTest.testCalculateStdDeviationInvocationCountEquals2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -145,7 +159,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dev.gregdrake.application.businesslogic.CalculateServiceTest.testMultipleCalculateInvocations&quot;" />
+            <option value="&quot;dev.gregdrake.application.businesslogic.CalculateServiceTest.testCalculateStdDeviationInvocationCountEquals2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -155,7 +169,30 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="decrypt-it [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CryptoServiceTest.testRunThroughEncryptAndDecrypt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dev.gregdrake.application.businesslogic.CryptoServiceTest.testRunThroughEncryptAndDecrypt&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="decrypt-it [spotlessJavaApply]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -166,28 +203,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="shadowJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="decrypt-it [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="testClasses" />
+            <option value="spotlessJavaApply" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.decrypt-it [testClasses]" />
-        <item itemvalue="Gradle.CalculateServiceTest" />
-        <item itemvalue="Gradle.CalculateServiceTest.testMultipleCalculateInvocations" />
-        <item itemvalue="Gradle.CalculateServiceTest.testCalculate" />
-        <item itemvalue="Gradle.decrypt-it [shadowJar]" />
+        <item itemvalue="Gradle.CryptoServiceTest.testRunThroughEncryptAndDecrypt" />
+        <item itemvalue="Gradle.CalculateServiceTest.testCalculateStdDeviationInvocationCountEquals2" />
+        <item itemvalue="Gradle.CalculateServiceTest.testCalculateStdDeviationCountEquals1" />
+        <item itemvalue="Gradle.CalculateServiceTest.testCalculateAverage" />
+        <item itemvalue="Gradle.decrypt-it [spotlessJavaApply]" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +237,8 @@
       <workItem from="1650212943444" duration="24476000" />
       <workItem from="1650307142899" duration="3035000" />
       <workItem from="1650311063730" duration="942000" />
-      <workItem from="1650312142333" duration="5581000" />
+      <workItem from="1650312142333" duration="6674000" />
+      <workItem from="1650320523176" duration="2500000" />
     </task>
     <servers />
   </component>

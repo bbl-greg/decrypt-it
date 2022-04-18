@@ -37,7 +37,7 @@ public class CryptoService implements CryptoUseCase {
     Cipher cipher = getAndInitCipher(Cipher.ENCRYPT_MODE);
 
     try {
-      // this can be made DRY
+
       byte[] encryptedAvg = cipher.doFinal(String.valueOf(input.getAverage()).getBytes());
       encryptedRunningValues.put("Average", Base64.getEncoder().encodeToString(encryptedAvg));
 
